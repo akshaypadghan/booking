@@ -1,0 +1,42 @@
+<!-- <div class="col-lg-12"><app-server></app-server>
+</div> -->
+        <div class="container">
+
+            <div id="loginStyle">
+                <form method="POST" id="loginForm" role="form" autocomplete="off" onsubmit="onSubmit()">
+                    <div id="loginTable">
+                        <div id="loginHeader">
+                            <div class="pvLogo">
+                              <img src="/assets/pv-clinical-logo.png" alt="pv clinical logo">
+                            </div>
+                            <div class="header-lbl">
+                                Log In
+                            </div>
+                        </div>
+
+                        <div id="loginUserContainer">
+                            <input type="text" name="username" id="username" class="loginFieldUser" placeholder="username" required autofocus>
+                        </div>
+
+                        <div id="loginPassContainer">
+                            <input type="password" name="password" id="password" class="loginFieldPass" placeholder="password" required>
+                        </div>
+
+                        <div id="loginFooter">
+                            <button id="loginSubmit" type="submit">Log In</button>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <script type='text/javascript'>
+            setInterval(function() {window.location.reload(true)}, 60000 * 15);
+            (function() {
+                document.forms['loginForm'].elements['j_username'].focus();
+                localStorage.removeItem("dashboardWidgetsConfig");
+                document.forms['loginForm'].elements['username'].focus();
+
+            })();
+        </script>
